@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>💰 IonicCoin</ion-title>
+   <h2>Conversor de Moedas</h2>
+
+<p class="subtitle">
+  Conversor inteligente com atualização em tempo real
+</p>
+
+<div class="status-chip">
+  🔄 Atualização em tempo real
+</div>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>Moeda Origem</ion-label>
+
+    <ion-select [(ngModel)]="fromCurrency">
+
+      <ion-select-option value="USD">
+        USD
+      </ion-select-option>
+
+     
+
+      <ion-select-option value="BRL">
+        BRL
+      </ion-select-option>
+
+      <ion-select-option value="EUR">
+        EUR
+      </ion-select-option>
+
+    </ion-select>
+
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Moeda Destino</ion-label>
+
+    <ion-select [(ngModel)]="toCurrency">
+
+      <ion-select-option value="USD">
+        USD
+      </ion-select-option>
+
+
+
+      <ion-select-option value="BRL">
+        BRL
+      </ion-select-option>
+
+      <ion-select-option value="EUR">
+        EUR
+      </ion-select-option>
+
+    </ion-select>
+
+  </ion-item>
+
+  <ion-item>
+
+    <ion-input
+      type="number"
+      [(ngModel)]="amount"
+      placeholder="Digite um valor">
+    </ion-input>
+
+  </ion-item>
+
+  <div class="button-row">
+
+  <ion-button
+    expand="block"
+    (click)="convert()">
+
+    Converter
+
+  </ion-button>
+
+  <ion-button
+    expand="block"
+    fill="outline"
+    (click)="swapCurrencies()">
+
+    Inverter moedas
+
+  </ion-button>
+
+</div>
+
+  <ion-card class="result-card">
+
+    <ion-card-header>
+         <ion-card-title>
+      Resultado
+    </ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+   
+    <p class="result-title">
+      Resultado da Conversão
+    </p>
+
+    <h1>
+      {{ result | number:'1.2-2' }}
+      {{ toCurrency }}
+    </h1>
+
+    <p>
+      {{ amount }}
+      {{ fromCurrency }}
+      =
+      {{ result | number:'1.2-2' }}
+      {{ toCurrency }}
+    </p>
+
+  </ion-card-content>
+
+</ion-card>
+
+<ion-button
+  class="navigation-button"
+  expand="block"
+  routerLink="/history">
+
+  📜 Ver Histórico
+
+</ion-button>
+
+<ion-button
+  class="navigation-button"
+  expand="block"
+  routerLink="/settings">
+
+  ⚙️ Configurações
+
+</ion-button>
+
+</ion-content>
+
+<h2>Conversor Inteligente</h2>
+
+<p>
+  Conversão de moedas em tempo real utilizando API REST.
+</p>

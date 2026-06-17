@@ -1,0 +1,156 @@
+:host {
+
+  --bg: #0f1117;
+  --card: #171923;
+  --border: #2a2f3a;
+  --text: #ffffff;
+  --text-secondary: #9ca3af;
+  --primary: #7c3aed;
+
+}
+
+ion-content {
+  --background: var(--bg);
+  color: var(--text);
+}
+
+ion-toolbar {
+  --background: #0f1117;
+  --color: white;
+
+  border-bottom: 1px solid var(--border);
+}
+
+h2 {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+ion-item {
+
+  --background: var(--card);
+
+  --border-color: transparent;
+
+  margin-top: 12px;
+
+  border-radius: 16px;
+
+  color: white;
+}
+
+ion-card {
+
+  background: var(--card);
+
+  border: 1px solid var(--border);
+
+  border-radius: 24px;
+
+  color: white;
+}
+
+.result-card {
+
+  background:
+    linear-gradient(
+      135deg,
+      #171923,
+      #1d2230
+    );
+
+  box-shadow:
+    0 10px 30px rgba(
+      124,
+      58,
+      237,
+      0.15
+    );
+}
+
+
+
+.result-title {
+
+  color: #9ca3af;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.result-card h1 {
+
+  font-size: 5rem;
+
+  font-weight: 800;
+
+  margin: 0;
+
+  color: #c4b5fd;
+}
+.button-row {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.button-row ion-button {
+
+  flex: 1;
+
+  height: 52px;
+}
+
+ion-button {
+
+  --background: #7c3aed;
+
+  --border-radius: 14px;
+
+  font-weight: 600;
+}
+
+.status-chip {
+
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: #171923;
+
+  border: 1px solid #2a2f3a;
+
+  color: #c4b5fd;
+
+  font-size: 0.9rem;
+}
+
+.navigation-button {
+
+  --background: #171923;
+
+  --color: white;
+
+  border: 1px solid #2a2f3a;
+
+  --border-radius: 14px;
+}
+
+.subtitle {
+
+  color: #9ca3af;
+
+  font-size: .95rem;
+}

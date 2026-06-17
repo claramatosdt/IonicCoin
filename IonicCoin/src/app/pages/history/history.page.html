@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>📜 Histórico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+
+    <ion-item *ngFor="let item of history">
+
+      <ion-label>
+
+        <h2>
+            💱  {{ item.amount }}
+          {{ item.from }}
+          →
+          {{ item.to }}
+        </h2>
+
+      <p>
+  Resultado: {{ item.result }}
+</p>
+
+<p>
+  {{ item.date | date:'dd/MM/yyyy HH:mm' }}
+</p>
+      </ion-label>
+
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
