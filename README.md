@@ -1,47 +1,100 @@
-💱 IonicCoin
+# 💰 IonicCoin
 
-Conversor de moedas desenvolvido com Ionic + Angular, utilizando API REST para conversão em tempo real.
+Conversor de moedas desenvolvido com Ionic e Angular, utilizando integração com API REST para obter taxas de câmbio em tempo real.
 
-📋 Funcionalidades
-Conversão de moedas em tempo real
-Integração com API ExchangeRate
-Histórico de conversões
-Armazenamento local (Local Storage)
-Funcionamento offline utilizando última taxa salva
-Inversão de moedas
-Navegação entre páginas
-Interface moderna em Dark 
+## 🎓 Informações Acadêmicas
 
-🚀 Tecnologias Utilizadas
-Ionic Framework
-Angular
-TypeScript
-HTML
-SCSS
-ExchangeRate API
+**Instituição:** UNINASSAU
+
+**Curso:** Análise e Desenvolvimento de Sistemas
+
+**Período:** 4º Período
+
+**Disciplina:** Código de Alta Performance - Mobile
+
+**Professor:** João Ferreira
+
+## 📖 Sobre o Projeto
+
+O IonicCoin é uma aplicação mobile desenvolvida para realizar conversões entre diferentes moedas internacionais utilizando taxas atualizadas em tempo real.
+
+O projeto foi construído com foco em desempenho, usabilidade e organização de código, aplicando conceitos de desenvolvimento mobile híbrido com Ionic Framework e Angular.
+
+## 🚀 Funcionalidades
+
+* Conversão de moedas em tempo real
+* Integração com ExchangeRate API
+* Histórico de conversões
+* Limpeza de histórico
+* Funcionamento offline utilizando taxas salvas localmente
+* Inversão rápida de moedas
+* Configurações persistentes com Local Storage
+* Interface moderna em Dark Mode
+* Suporte a múltiplas moedas internacionais
+
+## 🌎 Moedas Disponíveis
+
+* USD — Dólar Americano
+* BRL — Real Brasileiro
+* EUR — Euro
+* GBP — Libra Esterlina
+* JPY — Iene Japonês
+* CAD — Dólar Canadense
+* AUD — Dólar Australiano
+* CHF — Franco Suíço
+* CNY — Yuan Chinês
+* ARS — Peso Argentino
+* MXN — Peso Mexicano
+
+## 🛠 Tecnologias Utilizadas
+
+* Ionic Framework
+* Angular
+* TypeScript
+* HTML5
+* SCSS
+* ExchangeRate API
+* Local Storage
+
+## 📸 Capturas de Tela
+
+### Conversor
+
+![Conversor](docs/converter.png.png)
+
+### Histórico
+
+![Histórico](docs/history.png.png)
 
 
+### Configurações
 
-📸 Screenshots
-Conversor
-
-
+![Configurações](docs/settings.png.png)
 
 
-Histórico
+## ⚙️ Como Executar
 
+Clone o repositório:
 
+```bash
+git clone https://github.com/claramatosdt/IonicCoin.git
+```
 
+Instale as dependências:
 
-Configurações
-
-
-
-⚙️ Como executar
-
+```bash
 npm install
+```
+
+Execute o projeto:
+
+```bash
 ionic serve
-📁 Estrutura do Projeto
+```
+
+## 📂 Estrutura do Projeto
+
+```text
 src/
 ├── app/
 │   ├── pages/
@@ -50,9 +103,12 @@ src/
 │   │   └── settings/
 │   └── services/
 │       └── currency.ts
+```
 
-Desenvolvido por:
+## 👩‍💻 Desenvolvedora
 
 Maria Clara Duarte
 
-Projeto  para a disciplina de Código de Alta Performance - Mobile.
+Projeto acadêmico desenvolvido para a disciplina Código de Alta Performance - Mobile, do curso de Análise e Desenvolvimento de Sistemas 
+Professor : João Ferreira. 
+
