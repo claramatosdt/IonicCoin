@@ -60,16 +60,16 @@ O projeto foi construído com foco em desempenho, usabilidade e organização de
 
 ### Conversor
 
-![Conversor](docs/converter.png.png)
+![Conversor](IonicCoin/docs/converter.png.png)
 
 ### Histórico
 
-![Histórico](docs/history.png.png)
+![Histórico](IonicCoin/docs/history.png.png)
 
 
 ### Configurações
 
-![Configurações](docs/settings.png.png)
+![Configurações](IonicCoin/docs/settings.png.png)
 
 
 ## ⚙️ Como Executar
