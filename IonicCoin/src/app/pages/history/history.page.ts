@@ -8,7 +8,8 @@ import {
   IonToolbar,
   IonList,
   IonItem,
-  IonLabel
+  IonLabel,
+  IonButton
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -25,10 +26,20 @@ import {
     IonItem,
     IonLabel,
     CommonModule,
-    FormsModule
+    FormsModule,
+    IonButton
   ]
 })
 export class HistoryPage implements OnInit {
+
+
+  clearHistory() {
+
+  localStorage.removeItem('history');
+
+  this.history = [];
+
+}
 
   history: any[] = [];
 

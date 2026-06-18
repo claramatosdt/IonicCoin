@@ -12,6 +12,29 @@
     Aplicativo para conversão de moedas em tempo real.
   </p>
 
+
+  <ion-item>
+
+  <ion-label>
+    Frequência de atualização
+  </ion-label>
+
+  <ion-select
+    [(ngModel)]="updateFrequency"
+    (ionChange)="saveSettings()">
+
+    <ion-select-option value="1h">
+      A cada hora
+    </ion-select-option>
+
+    <ion-select-option value="24h">
+      Diariamente
+    </ion-select-option>
+
+  </ion-select>
+
+</ion-item>
+
   
 
   <ion-button

@@ -85,7 +85,7 @@ ion-card {
 
 .result-card h1 {
 
-  font-size: 5rem;
+  font-size: 4.5rem;
 
   font-weight: 800;
 
@@ -154,3 +154,54 @@ ion-button {
 
   font-size: .95rem;
 }
+
+.cards-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+
+  margin-top: 20px;
+
+}
+
+.action-card {
+
+  cursor: pointer;
+
+  transition: .3s;
+
+  background: #171923;
+
+  border: 1px solid #2a2f3a;
+
+}
+
+.action-card:hover {
+
+  transform: translateY(-4px);
+
+}
+
+.action-card h3 {
+
+  color: white;
+
+  margin-bottom: 8px;
+
+}
+
+.action-card p {
+
+  color: #9ca3af;
+
+}
+
+.result-card {
+
+  text-align: center;
+
+}
+

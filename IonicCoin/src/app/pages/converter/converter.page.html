@@ -17,24 +17,59 @@
 
 <ion-content class="ion-padding">
 
+
+<div class="converter-container"> </div>
+
+
+
   <ion-item>
     <ion-label>Moeda Origem</ion-label>
 
     <ion-select [(ngModel)]="fromCurrency">
 
-      <ion-select-option value="USD">
-        USD
-      </ion-select-option>
+    <ion-select-option value="USD">
+  🇺🇸 USD - Dólar Americano
+</ion-select-option>
 
-     
+<ion-select-option value="BRL">
+  🇧🇷 BRL - Real Brasileiro
+</ion-select-option>
 
-      <ion-select-option value="BRL">
-        BRL
-      </ion-select-option>
+<ion-select-option value="EUR">
+  🇪🇺 EUR - Euro
+</ion-select-option>
 
-      <ion-select-option value="EUR">
-        EUR
-      </ion-select-option>
+<ion-select-option value="GBP">
+  🇬🇧 GBP - Libra Esterlina
+</ion-select-option>
+
+<ion-select-option value="JPY">
+  🇯🇵 JPY - Iene Japonês
+</ion-select-option>
+
+<ion-select-option value="CAD">
+  🇨🇦 CAD - Dólar Canadense
+</ion-select-option>
+
+<ion-select-option value="AUD">
+  🇦🇺 AUD - Dólar Australiano
+</ion-select-option>
+
+<ion-select-option value="CHF">
+  🇨🇭 CHF - Franco Suíço
+</ion-select-option>
+
+<ion-select-option value="CNY">
+  🇨🇳 CNY - Yuan Chinês
+</ion-select-option>
+
+<ion-select-option value="ARS">
+  🇦🇷 ARS - Peso Argentino
+</ion-select-option>
+
+<ion-select-option value="MXN">
+  🇲🇽 MXN - Peso Mexicano
+</ion-select-option>
 
     </ion-select>
 
@@ -46,18 +81,48 @@
     <ion-select [(ngModel)]="toCurrency">
 
       <ion-select-option value="USD">
-        USD
-      </ion-select-option>
+  🇺🇸 USD - Dólar Americano
+</ion-select-option>
 
+<ion-select-option value="BRL">
+  🇧🇷 BRL - Real Brasileiro
+</ion-select-option>
 
+<ion-select-option value="EUR">
+  🇪🇺 EUR - Euro
+</ion-select-option>
 
-      <ion-select-option value="BRL">
-        BRL
-      </ion-select-option>
+<ion-select-option value="GBP">
+  🇬🇧 GBP - Libra Esterlina
+</ion-select-option>
 
-      <ion-select-option value="EUR">
-        EUR
-      </ion-select-option>
+<ion-select-option value="JPY">
+  🇯🇵 JPY - Iene Japonês
+</ion-select-option>
+
+<ion-select-option value="CAD">
+  🇨🇦 CAD - Dólar Canadense
+</ion-select-option>
+
+<ion-select-option value="AUD">
+  🇦🇺 AUD - Dólar Australiano
+</ion-select-option>
+
+<ion-select-option value="CHF">
+  🇨🇭 CHF - Franco Suíço
+</ion-select-option>
+
+<ion-select-option value="CNY">
+  🇨🇳 CNY - Yuan Chinês
+</ion-select-option>
+
+<ion-select-option value="ARS">
+  🇦🇷 ARS - Peso Argentino
+</ion-select-option>
+
+<ion-select-option value="MXN">
+  🇲🇽 MXN - Peso Mexicano
+</ion-select-option>
 
     </ion-select>
 
@@ -126,28 +191,37 @@
 
 </ion-card>
 
-<ion-button
-  class="navigation-button"
-  expand="block"
-  routerLink="/history">
+<div class="cards-grid">
 
-  📜 Ver Histórico
+  <ion-card class="action-card" routerLink="/history">
 
-</ion-button>
+    <ion-card-content>
 
-<ion-button
-  class="navigation-button"
-  expand="block"
-  routerLink="/settings">
+      <h3>📜 Ver Histórico</h3>
 
-  ⚙️ Configurações
+      <p>
+        Consulte suas últimas conversões
+      </p>
 
-</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card class="action-card" routerLink="/settings">
+
+    <ion-card-content>
+
+      <h3>⚙️ Configurações</h3>
+
+      <p>
+        Personalize sua experiência
+      </p>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</div>
 
 </ion-content>
 
-<h2>Conversor Inteligente</h2>
-
-<p>
-  Conversão de moedas em tempo real utilizando API REST.
-</p>

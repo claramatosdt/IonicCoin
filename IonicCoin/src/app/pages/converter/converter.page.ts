@@ -85,6 +85,29 @@ this.currencyService
       this.result =
         this.amount * rate;
 
+        const history = JSON.parse(
+  localStorage.getItem('history') || '[]'
+);
+
+history.unshift({
+
+  amount: this.amount,
+
+  from: this.fromCurrency,
+
+  to: this.toCurrency,
+
+  result: this.result,
+
+  date: new Date()
+
+});
+
+localStorage.setItem(
+  'history',
+  JSON.stringify(history)
+);
+
       localStorage.setItem(
         'rates',
         JSON.stringify(data)
