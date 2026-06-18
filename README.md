@@ -56,6 +56,10 @@ O projeto foi construído com foco em desempenho, usabilidade e organização de
 * ExchangeRate API
 * Local Storage
 
+### 📡 Modo Offline
+
+O aplicativo armazena localmente as últimas taxas de câmbio obtidas pela API. Caso não haja conexão com a internet, as conversões continuam funcionando utilizando os dados mais recentes salvos no dispositivo.
+
 ## 📸 Capturas de Tela
 
 ### Conversor
